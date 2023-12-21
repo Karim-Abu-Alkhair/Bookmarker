@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f7ecde;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.heading-primary {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  position: relative;
+}
+
+.heading-primary::before {
+  content: "";
+  background-color: #fec260;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
+}
+
+.heading-primary:hover.heading-primary::before {
+  height: 50%;
+}
+
+.heading-secondary {
+  font-family: "Righteous", sans-serif;
+  font-size: 2.5rem;
+
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.bookmark-body {
+  border-bottom: 2px dotted #000;
+  border-top: 2px dotted #000;
+}
+
+.btn-submit {
+  background-color: #d1512d;
+  padding: 0.5rem 4rem;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #b14528;
+}
+
+.form-control:focus {
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.close {
+  cursor: pointer;
+}
